@@ -1,0 +1,31 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="/views/templates/template.xhtml">
+
+
+    <ui:define name="title">家瓦数据管理平台</ui:define>
+
+    <ui:define name="viewname">面板</ui:define>
+
+    <ui:define name="head">
+        <h:outputScript name="js/chartSkin.js" library="poseidon-layout" />
+    </ui:define>
+
+    <ui:define name="content" >
+        <h:form>
+            <div class="card">
+                <div class="dashboard">
+                    welcome! dashboard template page
+                </div>
+            </div>
+        </h:form>
+        <script>
+            $(function () {
+                $('.active-menuitem').removeClass('active-menuitem');
+                $('.menulist li:first').addClass('active-menuitem');
+            });
+        </script>
+    </ui:define>
+
+</ui:composition>

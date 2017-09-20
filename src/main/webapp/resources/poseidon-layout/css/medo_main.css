@@ -1,0 +1,357 @@
+body .ui-dialog {
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(200, 200, 200, 0.35); }
+  body .ui-dialog .ui-dialog-titlebar {
+    background: #dc5057; }
+    body .ui-dialog .ui-dialog-titlebar.ui-dialog-titlebar {
+      color: #fff;
+      font-size: 18px;
+      line-height: 50px;
+      padding: 0px 14px; }
+    body .ui-dialog .ui-dialog-titlebar .ui-icon {
+      margin-top: 16px; }
+  body .ui-dialog .ui-dialog-header, body .ui-dialog .ui-dialog-content {
+    position: relative; }
+  body .ui-dialog .ui-dialog-content {
+    background: #fff; }
+body .card h1 i {
+  font-size: 26px;
+  color: #999;
+  margin-right: 5px; }
+body .card .mdfile-add {
+  background: #44b9b1; }
+  body .card .mdfile-add .ui-button-text {
+    display: inline-block;
+    line-height: 25px;
+    font-size: 16px; }
+body .card .mdfile-delete .ui-button-text {
+  display: inline-block;
+  line-height: 25px;
+  font-size: 16px; }
+body .card .ui-tabs-top {
+  margin-bottom: 50px; }
+  body .card .ui-tabs-top .materia-title {
+    margin: 20px 0 10px 0; }
+    body .card .ui-tabs-top .materia-title button {
+      margin-right: 10px; }
+body .card .ui-tabs-top:last-child {
+  margin-bottom: 0; }
+body .ui-paginator-current {
+  color: #333; }
+body .ui-paginator .ui-paginator-pages .ui-paginator-page {
+  color: #666; }
+body .ui-paginator .ui-paginator-pages .ui-state-active {
+  background: #dc5057;
+  color: #fff; }
+body .ui-tabs.ui-tabs-top {
+  border: none; }
+  body .ui-tabs.ui-tabs-top .ui-tabs-nav {
+    background: #fff;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #e2e2e2; }
+    body .ui-tabs.ui-tabs-top .ui-tabs-nav .ui-state-active {
+      background: #dc5057; }
+    body .ui-tabs.ui-tabs-top .ui-tabs-nav li a {
+      color: #666; }
+    body .ui-tabs.ui-tabs-top .ui-tabs-nav li.ui-state-active {
+      background: none; }
+      body .ui-tabs.ui-tabs-top .ui-tabs-nav li.ui-state-active a {
+        color: #b81c25;
+        border-bottom: 1px solid #b81c25;
+        margin-bottom: -1px; }
+    body .ui-tabs.ui-tabs-top .ui-tabs-nav li.ui-state-hover {
+      background: none; }
+      body .ui-tabs.ui-tabs-top .ui-tabs-nav li.ui-state-hover a {
+        color: #dc5057; }
+body .ui-tabs .ui-tabs-panels label {
+  width: 80px;
+  text-align: right;
+  float: left;
+  padding-right: 10px;
+  line-height: 34px; }
+body .ui-tabs .ui-tabs-panels .ui-inputfield {
+  width: 60%; }
+body .ui-tabs .ui-tabs-panels .ui-button-icon-only {
+  background: #dc757a;
+  padding: 3px 5px 2px; }
+body .ui-tabs .label-select label.ui-inputfield {
+  width: auto;
+  line-height: 20px; }
+body .card-w-title .ui-g-4 {
+  margin: 10px 0 20px; }
+body .ui-widget-header {
+  background: #dc5057;
+  color: #fff; }
+body .ui-datepicker table td a.ui-state-highlight {
+  background: #a1dcd7;
+  color: #fff; }
+body .ui-panelgrid-footer .ui-button-text-only {
+  float: right;
+  margin: 10px 0 10px; }
+body .addstyle-box {
+  margin-bottom: 10px; }
+
+.main-body .card .mdfile-add.ui-state-hover {
+  background-color: #2f817b; }
+
+body .materal-box {
+  width: 100%;
+  display: block;
+  border: none; }
+  body .materal-box .materialtree-left {
+    float: left;
+    border: none;
+    height: 100%;
+    width: 310px; }
+    body .materal-box .materialtree-left .ui-widget-content {
+      border: none; }
+      body .materal-box .materialtree-left .ui-widget-content .ui-corner-all {
+        border: none; }
+      body .materal-box .materialtree-left .ui-widget-content .group-tree {
+        border: 1px solid #c9cdd2; }
+        body .materal-box .materialtree-left .ui-widget-content .group-tree .ui-icon:before {
+          color: #999; }
+      body .materal-box .materialtree-left .ui-widget-content button {
+        margin-right: 8px; }
+  body .materal-box .materialtree-rgiht {
+    width: 80%;
+    display: inline-block;
+    border: none;
+    margin-top: 45px; }
+    body .materal-box .materialtree-rgiht > .ui-widget-content {
+      border: none; }
+    body .materal-box .materialtree-rgiht .ui-inputfield {
+      line-height: 14px;
+      padding: 2px 5px; }
+body button.add-but {
+  background: #43b9b0; }
+body button.add-but:hover {
+  background-color: #35948c; }
+body button.edit-but {
+  background: #43b9b0; }
+body button.edit-but:hover {
+  background-color: #35948c; }
+body button.delete-but {
+  background: #dc5057; }
+
+.ui-panel .ui-panel-content label {
+  display: inline-block;
+  width: 80px;
+  text-align: right; }
+
+.ui-panel .ui-panel-content img {
+  width: 120px; }
+
+.ui-paginator label.ui-paginator-rpp-label {
+  width: auto;
+  color: #666; }
+
+body .card .ui-datatable .ui-datatable-tablewrapper tr.ui-state-highlight {
+  background-color: #fff;
+  color: #333;
+  border-color: #b5b4b4; }
+
+@media (max-width: 1810px) {
+  body .materal-box .materialtree-rgiht {
+    float: right;
+    width: 70%; }
+  body .materal-box .materialtree-left {
+    width: 30%; } }
+@media (min-width: 1028px) and (max-width: 1400px) {
+  body .materal-box .materialtree-rgiht {
+    float: right;
+    width: 60%; }
+  body .materal-box .materialtree-left {
+    width: 40%; } }
+@media (min-width: 840px) and (max-width: 1028px) {
+  body .materal-box .materialtree-rgiht {
+    float: right;
+    width: 50%; }
+  body .materal-box .materialtree-left {
+    width: 50%; } }
+@media (min-width: 320px) and (max-width: 840px) {
+  body .materal-box .materialtree-rgiht {
+    width: 100%; }
+  body .materal-box .materialtree-left {
+    width: 100%; }
+    body .materal-box .materialtree-left .group-tree {
+      height: 250px;
+      overflow: auto;
+      width: 100%; } }
+/** table style **/
+@media (max-width: 640px) {
+  .ui-datatable-reflow .ui-datatable-data td[role="gridcell"] .ui-column-title {
+    text-align: left; } }
+body table td:last-of-type {
+  text-align: center; }
+body table .ui-button {
+  background: none;
+  width: 36px;
+  display: inline-block;
+  border: none;
+  margin-bottom: 5px; }
+  body table .ui-button span.ui-icon {
+    color: #999;
+    font-size: 20px;
+    width: 20px;
+    height: 20px; }
+  body table .ui-button span.ui-button-text {
+    display: none; }
+body table .ui-button.ui-state-hover {
+  background: none;
+  border: none; }
+  body table .ui-button.ui-state-hover span.ui-icon {
+    color: #b81c25; }
+body table .ui-button.ui-button-text-icon-left .ui-icon.fa {
+  margin-top: -16px; }
+
+.top-accession button {
+  float: left;
+  margin-right: 10px; }
+.top-accession .ui-corner-all {
+  float: left; }
+
+/**from style **/
+#form label {
+  min-width: 90px;
+  text-align: right;
+  float: left;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 36px; }
+#form label.ui-corner-all {
+  text-align: left;
+  line-height: 26px; }
+#form .ui-g {
+  margin-bottom: 15px; }
+  #form .ui-g button {
+    background: #ececec;
+    color: #999; }
+  #form .ui-g button.ui-state-hover {
+    background: #b81c25;
+    color: #fff; }
+  #form .ui-g button.ui-button-text-only {
+    background: #b81c25;
+    color: #fff;
+    margin-left: 90px;
+    line-height: 40px;
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 4px; }
+    #form .ui-g button.ui-button-text-only.ui-state-hover {
+      background-color: #8c151c; }
+#form textarea {
+  width: 50%; }
+
+#mpForm .material-uploadimg {
+  border: 1px solid #e2e2e2;
+  cursor: pointer; }
+#mpForm button.ui-button-text-only {
+  background: #b81c25;
+  color: #fff;
+  margin-left: 40px;
+  line-height: 40px;
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  border-radius: 6px; }
+  #mpForm button.ui-button-text-only.ui-state-hover {
+    background-color: #8c151c; }
+
+@media (max-width: 1150px) {
+  #form label {
+    clear: both;
+    float: none; } }
+@media (max-width: 790px) {
+  #form label {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding-bottom: 10px; }
+  #form .ui-g-4 {
+    display: block;
+    width: 100%; }
+    #form .ui-g-4 input {
+      width: 100%; }
+  #form .ui-g button.ui-button-text-only {
+    margin-left: 0; } }
+/**Package editor and add page style**/
+.combo-list li {
+  display: inline-block;
+  margin-right: 10px; }
+  .combo-list li div img {
+    height: 60px;
+    max-width: 80px;
+    float: left;
+    margin-right: 10px; }
+  .combo-list li div span {
+    float: left;
+    width: 40%;
+    line-height: 24px;
+    color: #999; }
+
+.package-popup tr.ui-state-highlight {
+  background-color: #f1f1f1;
+  border-color: #e3e2e2;
+  color: #666; }
+
+body .card .ui-datatable .ui-datatable-tablewrapper tr.ui-state-highlight {
+  background-color: #eaf6f5;
+  color: #333;
+  border-color: #b5b4b4; }
+
+body .ui-datatable .ui-datatable-data tr.ui-datatable-even.ui-state-highlight {
+  background-color: #eaf6f5;
+  color: #333;
+  border-color: #b5b4b4; }
+
+body .ui-datatable .ui-datatable-data tr td sapn.inactive {
+  color: #999; }
+
+body .ui-datatable .ui-datatable-data tr.ui-state-highlight {
+  border-color: #b5b4b4;
+  background-color: #eaf6f5; }
+body .ui-datatable .ui-datatable-data tr.ui-state-hover {
+  border-color: #b5b4b4;
+  background-color: #eaf6f5; }
+body .ui-tabs .ui-tabs-panels .input-search.ui-button-icon-only {
+  border-radius: 0 3px 3px 0;
+  margin-left: -1px;
+  padding: 3px 5px 3px; }
+body .input-price {
+  border-radius: 0 3px 3px 0;
+  margin-left: -1px;
+  padding: 3px 0;
+  background: #dc757a; }
+body .ui-dialog .ui-dialog-buttonpane {
+  margin: 0;
+  padding-bottom: 20px;
+  border-top: none; }
+body .pack-information {
+  width: 40%; }
+  body .pack-information .ui-g-4 {
+    display: block;
+    float: inherit;
+    width: 100%; }
+    body .pack-information .ui-g-4 label {
+      display: inline-block; }
+    body .pack-information .ui-g-4 input.ui-inputfield {
+      width: 60%; }
+    body .pack-information .ui-g-4 .ui-selectonemenu {
+      width: 58%; }
+body .pack-information-img label {
+  display: block;
+  margin: 15px 0 10px; }
+body .pack-information-img .p-info-img-cen {
+  margin: 60px 0 0 10px; }
+  body .pack-information-img .p-info-img-cen .m-uploadimg {
+    border: 1px solid #c3c3c3;
+    width: 100px;
+    height: 100px;
+    cursor: pointer; }

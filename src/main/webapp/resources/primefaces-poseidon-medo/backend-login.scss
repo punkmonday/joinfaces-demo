@@ -1,0 +1,647 @@
+$primaryColor:#b81c25;
+$MYfonts:Microsoft Yahei;
+@import '../sass/theme/_theme';
+@import 'backend';
+#no_bg{
+    background-attachment: fixed;
+    background-position: bottom left;
+}
+
+input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
+/*登录页面frome style*/
+
+.login-body {   
+    .ui-inputfield {
+        background: #ffffff;
+        padding: $medoinputPadding;
+        border: 1px solid $medoinputBorderColor;
+        @include transition(border-color .3s);
+        @include border-radius($medoborderRadius);
+        font-size: $medofontSize;
+        font-family: $MYfonts;
+        
+        
+        &.ui-state-hover {
+            border: 1px solid $inputHoverBorderColor;
+        }
+        
+        &.ui-state-focus {
+            border: 1px solid $primaryColor;
+            @include border-shadow();
+        }
+    }
+    
+    
+    .ui-button {
+        color: #ffffff;
+        background-color: $primaryColor;
+        font-size: $fontSize;
+        
+        &.turquoise-btn {
+            background-color: $backendbutton;
+            
+            &.ui-state-hover {
+                background-color: darken($backendbutton,10%);
+            }
+            
+            &.ui-state-focus {
+                background-color: darken($backendbutton,10%);
+            }
+            
+            &.ui-state-active {
+                background-color: darken($backendbutton,10%);
+            }
+        } 
+        &.medo_dl_but:hover{
+            background-color: darken($backendbutton,10%);
+        }
+        
+        .ui-icon-triangle-1-s {
+            margin-top: -10px;
+        }
+    }
+    
+    .ui-chkbox {
+        
+        .ui-chkbox-box {
+            border: 1px solid $medoinputBorderColor;
+            @include transition(background-color .3s);
+            
+            &.ui-state-hover {
+                border: 1px solid $inputHoverBorderColor;
+            }
+            
+            &.ui-state-active {
+                border: 1px solid $primaryColor;
+                background-color: $primaryColor;
+                color: #ffffff;
+            }
+            
+            &.ui-state-focus {
+                border: 1px solid $primaryColor;
+                @include border-shadow();
+            }
+            
+            .ui-chkbox-icon {
+                overflow: hidden;
+                font-size: $fontSize + 2px;
+                position: relative;
+                top: 2px;
+                left: 2px;
+            }
+        }
+    }
+    
+    .ui-radiobutton {
+       
+
+        .ui-radiobutton-box {
+            &.ui-state-active {
+                border: 1px solid $medoinputHoverBorderColor;
+                background-color: #ffffff;
+                color: #ffffff;
+                
+                .ui-radiobutton-icon {
+                    color: $turquoise;
+                }
+            }
+            
+            &.ui-state-focus {
+                border: 1px solid $turquoise;
+                @include border-shadow();
+            }
+            
+            .ui-radiobutton-icon {
+                @include transition(color .3s);
+                overflow: hidden;
+                position: relative;
+                top: 2px;
+                left: 1.4px;
+            }
+        }
+    }   
+}
+
+/*登录页面frome style 结束*/
+
+.medo_register{
+    
+    #medo_login_panel:before
+            {
+            content: "";
+            width: 960px;
+            height: 840px;
+            border-radius:10px;
+            background: #000;
+            opacity:0.15;
+            filter:alpha(opacity=15);
+            position: absolute;
+            left: 0;
+            top:0;
+            display: inline-block; 
+            z-index: -2;
+            margin-bottom:100px;
+            border:1px solid #fff;
+            box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.1);
+        }
+    #medo_login_panel{
+        width: 960px;
+        position: absolute;
+        padding: 20px;       
+        background-color:transparent;
+        overflow:inherit;
+        margin:30px auto 0;
+        box-shadow:none;
+        left: 50%;
+        margin-left: -300px;
+        top: 50%;
+        margin-top: -327px;
+        height: auto;
+        .ui-g:before
+            {
+                content: "";
+                width: 926px;
+                height: 800px;
+                background: #fff;
+                opacity:0.85;
+                filter:alpha(opacity=85);
+                position: absolute;
+                left: 20px;
+                top:20px;
+                display: inline-block; 
+                z-index: -1; 
+            
+            }
+        .ui-g
+        {
+            background:none;
+            padding: 30px 80px;
+        }
+
+        .ui-g-12 {
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            
+            input
+            {
+              padding-left:50px;
+            }
+            
+            &.logo-container {
+                img {
+                    margin-bottom: 0;
+                    width:350px;
+                    height:148px;
+                }
+            }
+            
+            &.chkbox-container {
+                text-align: left;
+                h3
+                {
+                    font-family: $MYfonts;
+                    font-size: 20px;
+                    font-weight: normal;
+                    color: $fontColor;
+                    margin-top: 0;
+                    
+                }
+                label
+                {
+                    text-align: center;
+                    font-family: $MYfonts;
+                    font-size: 20px;
+                }
+                
+                .ui-outputlabel {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 8px;
+                }
+              
+            }
+            
+            &.button-container {
+                button {
+                    margin-bottom: 0px;
+                    height: 54px;
+                    line-height: 54px;
+                    border-radius: $medoborderRadius;
+                    font-size: 24px;
+                }
+            }
+        }
+        .medu_validation
+        {
+            border:none;
+            background: none;
+            input
+            {
+                float:left;
+                width: 70%;
+                margin-right: 3%;
+                opacity: 100;
+            }
+            button
+            {
+                float:right;
+                width: 26%;
+                background: #fff;
+                border: 1px solid $medoinputBorderColor;
+                padding: $medoinputPadding;
+                font-size: $medofontSize;
+                font-family: $MYfonts;
+                opacity: 100;
+                
+                span.ui-button-text
+                {
+                    padding:0;
+                    color:$medoColorBlue;  
+                }
+            }
+            .ui-panel-content
+            {
+                padding:0;
+            }
+        }
+        .medo_username:before
+            {
+                width: 27px;
+                height: 28px;
+                content:"";
+                top:29px;
+                left:12px;
+                position: absolute;
+                display: inline-block;
+                background: url("\#{resource['primefaces-poseidon-medo:images/icon_user.svg']}") left center no-repeat;  
+            }
+            .medu_validation:before
+            {
+                width: 26px;
+                height: 28px;
+                content:"";
+                top:20px;
+                left:15px;
+                position: absolute;
+                display: inline-block;
+                background: url("\#{resource['primefaces-poseidon-medo:images/icon_validation.svg']}") left center no-repeat;  
+            }
+            
+            .medo_pwd:before
+            {
+                width: 26px;
+                height: 30px;
+                content:"";
+                top:28px;
+                left:15px;
+                position: absolute;
+                display: inline-block;
+                background: url("\#{resource['primefaces-poseidon-medo:images/icon_password.svg']}") left center no-repeat;  
+            }
+            
+            
+            
+            .pwd_vis:after
+            {
+               width: 26px;
+                height: 28px;
+                content:"";
+                top:20px;
+                right:15px;
+                position: absolute;
+                display: inline-block;
+                cursor: pointer;
+                background: url("\#{resource['primefaces-poseidon-medo:images/icon_visible.svg']}") left center no-repeat;  
+            }
+            
+            .medo_address:after
+            {
+                width: 28px;
+                height: 28px;
+                content:"";
+                top:20px;
+                left:15px;
+                position: absolute;
+                display: inline-block;
+                background: url("\#{resource['primefaces-poseidon-medo:images/icon_user.svg']}") left center no-repeat;  
+            }
+    }              
+}
+.type_css
+{
+    padding:0 15px;
+    line-height: 50px;
+    font-size: 20px;
+    background: #f1f1f1;
+    border: 1px solid #dfdfdf;
+    color: #666;
+    display: inline-block;
+    border-radius: 6px;
+    margin-right: 15px;
+    box-shadow:0 1px 3px #d1d1d1;
+    i
+    {
+        font-size: 26px;
+        float: left;
+        padding:10px 5px 0 0;
+    }
+}
+
+.type_css:hover
+{
+    background: #f5821f;
+    border: 1px solid #f06f00;
+    color: #fff;
+    cursor: pointer;
+}
+.type_selected
+{
+    background: #f5821f;
+    border: 1px solid #f06f00;
+    color: #fff;
+}
+
+.medo_login_box
+{
+    #medo_login_panel:before
+    {
+        width: 600px;
+        height: 650px;
+    }
+    #medo_login_panel
+    {
+        width: 600px;
+        .ui-g
+        {
+            padding: 30px 80px;
+        }
+        .ui-g:before
+        {
+            width: 566px;
+            height: 610px;
+        }
+    }
+}
+
+.for_password
+{
+    #medo_login_panel
+    {
+        .ui-g
+        {
+            padding: 30px 80px;
+            .f_pass_title
+            {
+                font-size: 24px;
+                display: block;
+                text-align: left;
+            }
+        }
+        .medu_validation
+        {
+            input
+            {
+                width: 60%;
+            }
+        }
+        .medu_validation
+        {
+           button
+            {
+                width: 36%;
+            } 
+        }
+    }
+}
+
+
+.medo_p_r
+{
+    
+    font-size: $medofontSize;
+    a
+    {
+        color: $medoColorBlue;
+    }
+    a:hover
+        {
+        color: $medoColorBlue;
+        text-decoration: underline;
+    }
+    .for_password
+    {
+        float:left;
+    }
+
+    .registered
+    {
+        float:right;
+        color:#3ab12d;
+        font-size:16px;
+        cursor: pointer;
+        img{
+            width: 26px;
+            vertical-align: -6px;
+            margin-right: 10px;
+        }
+    }
+}
+
+body
+{
+    .ui-message.ui-message-error{
+        position: absolute;
+        right: -120px;
+        top: 30%;
+        max-width: 120px;
+    }
+    
+    .medu_validation
+    {
+        .ui-message-error{
+           right: -130px; 
+        }
+    }
+    
+    .pwd_vis .ui-message-error,.medo_address .ui-message-error
+    {
+        right: -137px;
+    }
+}
+
+
+@media (max-width:999px)
+{
+    .medo_register {
+        background: none;
+        #medo_login_panel {
+            .ui-g:before{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 641px)and(max-width:999px) {
+    #no_bg {
+        background: none;
+    }
+    
+    
+    body{
+        .ui-radiobutton{
+            float: left;
+            margin-top: 40px;
+        }
+        .ui-selectoneradio
+        {
+            label
+            {
+                float: left;
+            }           
+        }
+             
+    } 
+     
+    .medo_register {
+        background: none;
+        #medo_login_panel:before
+                {
+                display: none;
+            }
+        
+        #medo_login_panel {
+            width: 100%;
+            margin: 0 auto 0;
+            left:0;
+            top:0;
+            
+            .ui-g:before
+                {
+                display: none;
+            }
+            .ui-g{
+                padding: 0;
+            }
+        }
+       
+    }
+}
+
+@media (max-width: 640px)
+{
+    body{
+        .ui-radiobutton{
+            float: left;
+            margin-top: 40px;
+        }
+        .ui-selectoneradio
+        {
+            label
+            {
+                float: left;
+            }           
+        }
+             
+    } 
+     
+    .medo_register {
+        background: none;
+        #medo_login_panel:before
+                {
+                display: none;
+            }
+        
+        #medo_login_panel {
+            width: 100%;
+            margin: 0 auto 0;
+            left:0;
+            top:0;
+            .ui-g{
+                padding: 0;
+            }
+        }
+       
+    }
+    
+}
+
+@media (max-width: 480px)
+{
+    body {
+        .ui-inputfield
+        {
+            font-size: 16px;
+        }
+        .type_css
+        {
+            width: 89%;
+            float: left;
+            margin-bottom: 16px;
+        }
+    }
+    .medo_register{
+        #medo_login_panel {            
+            .medu_validation button
+            {
+               font-size: 16px;
+            }
+        }
+    }    
+   
+}
+
+
+@media (max-width: 375px)
+{
+    body{
+        .ui-radiobutton{
+            margin-top: 30px;
+        }
+    }
+    
+    .medo_register{
+        #medo_login_panel{
+        .medu_validation button
+            {
+               font-size: 12px;
+               padding: 10px 5px;
+            }
+            
+        .ui-g-12 {
+            .ui-selectoneradio label{
+                margin: 0 6px;
+            } 
+            
+            &.logo-container {
+                img {
+                    width:260px;
+                    height: auto;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        
+        form
+            {
+                width: 100%;
+            }            
+        }
+    }   
+    
+}
+
+@media (max-width: 425px) and (min-widht:320px)
+{
+    .medo_register
+    {
+       #medo_login_panel
+       {
+         .chkbox-container
+         {
+             
+         }
+       }
+    }
+}

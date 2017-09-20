@@ -1,0 +1,241 @@
+$primaryColor:#b81c25;
+
+@import '../../sass/layout/_layout';
+
+$turquoise:#b81c25;
+$fromcolor:#dc5057;
+$formcolor:#999;
+
+li
+{
+    list-style:none;
+}
+
+body
+{
+    .ui-inputfield{
+        border:1px solid #c3c3c3;   
+        line-height: 25px;
+         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+    }
+    .ui-inputfield.ui-state-focus
+    {
+        border: 1px solid $fromcolor;
+    }
+    
+    .ui-radiobutton   
+    {
+        .ui-radiobutton-box.ui-state-active{
+            border: 1px solid $turquoise;
+            .ui-radiobutton-icon{
+                color:$turquoise;
+            }
+        }
+    }
+    .ui-button{
+        background: $turquoise;
+    }
+    
+    tr.ui-state-highlight
+    {
+         background-color:#ececec;
+         color: #666;
+         border-color:#ececec;
+    }
+    
+    
+    .ui-selectonemenu{
+        border: 1px solid #e3e3e3;
+    }
+    
+    .ui-button{
+        &.ui-confirmdialog-yes{
+            margin-right: 10px;
+            background: #44b9b1;
+             &.ui-state-hover{
+                   background-color: darken(#44b9b1,15%);   
+                 }
+        }                    
+    }
+    
+    .ui-dialog{
+        .ui-dialog-buttonpane{
+            button.ui-confirmdialog-yes{
+                   margin: 0 10px 0 0; 
+            }
+        } 
+    }
+    
+    .ui-dialog.ui-confirm-dialog .ui-dialog-content > span.ui-confirm-dialog-severity{
+         color: #dd8e51;
+    }
+}
+
+.card{
+    overflow: auto;
+}
+
+.main-body{
+    .card{
+        .ui-button.ui-state-hover{
+            background-color: #7a0007;   
+        }
+    }
+}
+
+.main-body .ui-paginator{
+    background-color: #f1f1f1;
+    border: 1px solid #c9cdd2;
+    border-top: none;
+}
+
+.ui-outputlabel{
+    vertical-align: 8px;
+}
+
+.main-body{
+    .ui-paginator{
+        .ui-paginator-prev{
+            color:#d5d5d5;
+            opacity:1;
+        }
+    }
+}
+ 
+.main-body{
+    .ui-paginator{
+        .ui-paginator-first{
+            @extend .ui-paginator-prev;
+        }
+    }
+}
+
+.main-body{
+    .ui-paginator{
+        .ui-paginator-next{
+            @extend .ui-paginator-prev;
+        }
+    }
+}
+
+.main-body{
+    .ui-paginator{
+        .ui-paginator-last{
+            @extend .ui-paginator-prev;
+        }
+    }
+}
+.medo_add_editor_from
+{
+    overflow: hidden;   
+    
+    .medo_f_label li
+    {
+        display:block;
+        padding-bottom:20px;
+        
+        .ui-outputlabel
+        {
+            width: 80px;
+            display: inline-block;
+            text-align: right;
+            padding-right:10px;
+            color: $formcolor;
+        }
+        
+        .ui-selectoneradio 
+        {
+            display: inline-block;
+            width: auto;
+        }
+        .ui-grid-col-6
+        {
+            display: inline-block;
+            width: auto;
+        }
+    }
+    
+    
+    
+    
+    button
+        {
+            margin: 10px 0;
+        }
+        .ui-button.ui-state-hover 
+            {
+               background-color: darken($turquoise,10%);
+            }
+            
+            .ui-button.ui-state-focus
+            {
+               background-color: darken($turquoise,10%);
+            }
+    
+        .ui-selectonemenu.ui-state-focus
+            {
+                border: 1px solid $turquoise;
+            }
+}
+
+@media (max-width:1024px)
+{
+    .medo_add_editor_from
+    {
+        
+        .ui-grid-row{
+            .ui-grid-row
+            {
+                .ui-grid-col-6
+                {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 5px 8px;
+                    .ui-radiobutton{
+                        margin-top: 0px;
+                    }
+                }
+            }
+            
+        }
+    }  
+}
+
+@media (max-width: 999px) and (min-width:768px)
+{
+    body
+    {
+        .medo_add_editor_from 
+        {
+            
+            .ui-radiobutton
+            {
+                margin-top: 0;
+            }        
+        }
+    }   
+}
+
+@media (max-width: 767px)and(min-width:320px)
+{
+    .medo_add_editor_from 
+        {
+            .medo_f_label{
+                li{
+                    .ui-outputlabel{
+                        width: auto;
+                        display: block;
+                        text-align: left;
+                        padding-bottom: 10px;
+                    }
+                }
+            } 
+            .ui-radiobutton
+            {
+                margin-top: 0;
+            }  
+        }
+        .choose-box{
+            display: none;
+        }    
+}

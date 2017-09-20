@@ -1,0 +1,363 @@
+.sty{ font-size:20px; color:#bbb; padding:40px 0 0;}
+
+/*20141121-mj-msage-ui-1*/
+
+.mj_mess_clo .mj_icon_clo
+{
+    display:inline-block;
+    width:10px;
+    height:9px;
+    margin:0 0 0 8px;
+    padding:0;
+    text-indent:-9999px;
+    background:url("#{resource['poseidon-layout:images/medo-img/ui-icons_454545_256x240.png']}") no-repeat -162px -148px;	
+}
+
+.mj_mess_clo:hover .mj_icon_clo
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/ui-icons_222222_256x240.png']}") no-repeat -162px -148px;	
+}
+
+.mj_mess_error
+{
+    color:#dd5b6e;
+    border:1px solid #dd5b6e;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#fff;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_err
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -94px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+u.mj_me_img_e_inf
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat -40px -55px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+u.mj_me_img_e_war
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat -40px -94px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_err_msa
+{
+    color:#dd5b6e;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_warning
+{
+    color:#f0a574;
+    border:1px solid #f0a574;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#fff;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_war
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -492px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_war_msa
+{
+    color:#f0a574;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_success
+{
+    color:#6bc5b3;
+    border:1px solid #6bc5b3;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#fff;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_suc
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -630px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_suc_msa
+{
+    color:#5bc3a2;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_info
+{
+    color:#7292c3;
+    border:1px solid #7292c3;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#fff;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_inf
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -361px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_inf_msa
+{
+    color:#7292c3;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+/*mj-msage-ui-1*/
+
+
+/*mj-msage-ui-2*/
+
+.mj_mess_error2
+{
+    border:1px solid #e96578;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#e96578;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_err2
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -94px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_err_msa2
+{
+    color:#fff;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_warning2
+{
+    border:1px solid #fed16c;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#fed16c;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_war2
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -492px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_war_msa2
+{
+    color:#555;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_success2
+{
+    border:1px solid #6bc5b3;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#6bc5b3;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_suc2
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -630px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_suc_msa2
+{
+    color:#fff;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_info2
+{
+    border:1px solid #7697ca;
+    border-radius:4px;
+    padding:5px 10px;
+    background:#7697ca;
+    display:inline-block;
+    margin:5px 0;
+}
+
+u.mj_me_img_inf2
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -361px;
+    width:15px;
+    height:15px;
+    display:inline-block;
+}
+
+b.mj_inf_msa2
+{
+    color:#fff;
+    font-size:14px;
+    line-height:18px;
+    display:inline;
+    font-weight:normal;
+}
+
+/*mj-msage-ui-2*/
+
+/*mj-msage-ui-3*/
+
+.mj_mess_error3
+{
+    padding:5px 10px;
+    display:inline-block;
+    margin:5px 0;
+    overflow:hidden;
+}
+
+u.mj_me_img_err3
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -663px;
+    width:32px;
+    height:32px;
+    float:left;
+    padding:0 10px 0 0; 
+}
+
+b.mj_err_msa3
+{
+    font-size:16px;
+    line-height:22px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_warning3
+{
+    padding:5px 10px;
+    display:inline-block;
+    margin:5px 0;
+    overflow:hidden;
+}
+
+u.mj_me_img_war3
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -399px;
+    width:32px;
+    height:32px;
+    float:left;
+    padding:0 10px 0 0; 
+}
+
+b.mj_war_msa3
+{
+    font-size:16px;
+    line-height:22px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_success3
+{
+    padding:5px 10px;
+    display:inline-block;
+    margin:5px 0;
+    overflow:hidden;
+}
+
+u.mj_me_img_suc3
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -531px;
+    width:32px;
+    height:32px;
+    float:left;
+    padding:0 10px 0 0; 
+}
+
+b.mj_suc_msa3
+{
+    font-size:16px;
+    line-height:22px;
+    display:inline;
+    font-weight:normal;
+}
+
+.mj_mess_info3
+{
+    padding:5px 10px;
+    display:inline-block;
+    margin:5px 0;
+    overflow:hidden;
+}
+
+u.mj_me_img_inf3
+{
+    background:url("#{resource['poseidon-layout:images/medo-img/err.png']}") no-repeat 0 -264px;
+    width:32px;
+    height:32px;
+    float:left;
+    padding:0 10px 0 0; 
+}
+
+b.mj_inf_msa3
+{
+    font-size:16px;
+    line-height:22px;
+    display:inline;
+    font-weight:normal;
+}

@@ -1,0 +1,204 @@
+$primaryColor:#3f6aae;
+$navbackground:#f1f1f1;
+$hoverbackground:#f5821f;
+$navcolor:#455467;
+$navbordercolor:#dfdfdf;
+$medopromptbg:#f3f3f3;
+
+@import '../../sass/layout/_layout';
+@import 'backend-navigation';
+
+.medo_prompt
+{
+   width: 100%;
+   .ui-lg-3
+   {
+       padding-right: 30px;
+   }
+    .overview-box
+    {
+        background: $medopromptbg;
+        position: relative;
+        overflow: inherit;
+        .overview-box-name
+            {
+                color: #888;
+                padding-top: 15px;
+            } 
+        .overview-box-count
+        {
+            position: absolute;
+            right:-5px;
+            top:-10px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: $hoverbackground;
+        }
+        
+        .d_ts_icon
+        {    
+            padding:10px 10px 0 20px;;
+            display: inline-block;            
+            i:before
+            {
+                display: inline-block; 
+                content: "";
+                width: 45px;
+                height: 45px;
+                background: url("\#{resource['poseidon-layout:images/medoimages/d_audit.svg']}") left center no-repeat;
+            }
+            
+            .issue_ordersicon:before
+            {
+                background: url("\#{resource['poseidon-layout:images/medoimages/d_problem_icon.svg']}") left center no-repeat;
+            }
+            .validate_usericon:before
+            {
+                background: url("\#{resource['poseidon-layout:images/medoimages/d_yzus.svg']}") left center no-repeat;
+            }
+            .verify_enterpriseicon:before
+            {
+                background: url("\#{resource['poseidon-layout:images/medoimages/d_qyyz.svg']}") left center no-repeat;
+            }
+        }
+    }
+    .overview-box:hover
+            {
+             background: #eaf1fd;
+             cursor: pointer;
+        }
+    
+}
+
+.medo_d_order
+    {
+        width: 40%;
+        
+        h1
+        {
+            font-size: 20px;
+            color: #333;
+            font-weight: normal;
+            float: left;
+            width: 100%;
+            line-height: 32px;
+            margin-top: 30px;
+        }
+        h1:before
+            {
+            content: "";
+            float: left;
+            width: 24px;
+            height: 32px;
+            margin:0 10px 0 20px;
+            background: url("\#{resource['poseidon-layout:images/medoimages/d_order.svg']}") left center no-repeat;
+        }
+        ul
+        {
+            margin-left: 0;
+            padding-top: 10px;
+            -webkit-padding-start: 20px;
+        }
+        li
+        {
+            display: inline-block;
+            width: 100%;
+            position:relative;
+            padding: 10px 0 10px;
+            border-bottom:1px solid #f1f1f1;
+            div
+            {
+                font-size: 14px;
+                line-height: 32px;
+            }
+            .orderno
+            {
+                color: #999;
+                span
+                {
+                    font-size: 12px;
+                    background: #65c3ce;
+                    padding: 2px 8px;
+                    border-radius: 8px;
+                    color: #fff;
+                    margin-left: 10px;
+                }
+            }
+            .ordertype
+            {
+                color:#999;
+               span
+                {
+                   text-indent: -9999px;
+                   width: 30px;
+                   height: 30px;
+                   display: inline-block;
+                   margin-right: 10px;
+                }
+                .distribution
+                {
+                    background: url("\#{resource['poseidon-layout:images/medoimages/d_distribution.svg']}") left center no-repeat;
+                }
+                .installation
+                {
+                    background: url("\#{resource['poseidon-layout:images/medoimages/d_installation.svg']}") left center no-repeat;
+                }
+            }           
+            .medo_orderno_ts
+            {
+               font-size: 36px;
+               position: absolute;
+               right:20px;
+               top: 50%;
+               color: #a1a5a8;
+            }  
+        }
+        li:hover
+                {
+                background: #f7f7f7;
+                cursor: pointer;
+            }
+    }
+    
+    .problem_order
+    {
+        padding-left: 5%;
+        
+        h1:before
+            {
+            background: url("\#{resource['poseidon-layout:images/medoimages/d_problem.svg']}") left center no-repeat;
+        }
+        li
+        {
+            .orderno span
+            {
+                background: #d8532c;
+            }
+        }
+    }
+    
+    @media (min-width: 768px)and(max-width: 1024px)
+    {
+        .medo_d_order
+        {
+            width: 45%;
+        }
+    }
+    
+    @media (min-width: 320px)and(max-width: 767px)
+    {
+        
+        .medo_d_order
+        {
+            width: 100%;
+            padding-left: 0;
+        }
+
+    }
+    
+    

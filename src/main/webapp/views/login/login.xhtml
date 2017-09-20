@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <f:facet name="first">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+    </f:facet>
+    <title>J&amp;C后台管理系统</title>
+    <style type="text/css">
+        .error {
+            color: red;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</h:head>
+
+<h:body styleClass="login-body medo_register medo_login_box" id="no_bg">
+
+    <div class="login-panel ui-fluid" id="medo_login_panel">
+        <div class="ui-g">
+            <div class="ui-g-12 logo-container">
+
+                <p:graphicImage name="images/login/title.png" library="poseidon-layout"/>
+            </div>
+            <form method="post">
+                <div class="ui-g-12 medo_username">
+                    <p:inputText id="username" placeholder="请输入手机号"
+                                 value="${sessionScope['SPRING_SECURITY_LAST_USERNAME']}"/>
+                </div>
+                <div class="ui-g-12 medo_pwd">
+                    <p:password id="password" placeholder="请输入您的密码" feedback="false"/>
+                </div>
+                <div class="ui-g-12 button-container">
+                    <button type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only turquoise-btn medo_dl_but">
+                        <span class="ui-button-text ui-c">登录</span>
+                    </button>
+                </div>
+                <div class="medo_p_r">
+                        <span class="for_password">
+                            <input type="checkbox" name="rememberMe"
+                                   style="vertical-align: middle;margin-left: 5px;"/><span
+                                style="margin-left: 5px;font-size: 12px;">记住密码</span>
+                        </span>
+                </div>
+            </form>
+            <div class="ui-g-12 error ${param.error == true ? '' : 'hide'}">
+                登录失败 , ${sessionScope['SPRING_SECURITY_LAST_EXCEPTION'].message}
+            </div>
+        </div>
+    </div>
+    <h:outputStylesheet name="css/layout-turquoise.css" library="poseidon-layout"/>
+</h:body>
+</html>

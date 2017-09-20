@@ -1,0 +1,205 @@
+$primaryColor:#b81c25;
+$navbackground:#f1f1f1;
+$navhoverbackground:#fff;
+$hoverbackground:#b81c25;
+$navcolor:#455467;
+$navbordercolor:#dfdfdf;
+
+@import '../../sass/layout/_layout';
+body.main-body
+{
+    background-color: #fff;
+}
+
+
+.layout-wrapper      
+{
+    .topbar
+    {
+        .logo
+        {
+            background: url("\#{resource['poseidon-layout:images/logo-white.svg']}") top left no-repeat; 
+        }
+    }
+    .layout-menu-container
+    {
+        background-color: $navbackground;
+        border-bottom: none;
+        border-right:1px solid #e3e2e2;
+    }
+    
+    .layout-main
+    {
+       .route-bar
+       {
+           background-color:#fff;
+           padding: 20px 20px 5px 25px;
+           font-size: 16px;
+           color:#333;
+           .fa-home:before
+               {
+               color: #999;
+               font-size: 18px;
+           }
+       }
+    }
+    .layout-menu
+    {      
+        >li.active-menuitem{                      
+            > a
+            {
+                background-color:#fff;
+                color: #b81c25;
+                    i:before
+                    {
+                        color: #b81c25;
+                    }
+                    
+            }                     
+        }
+       
+        
+        li{
+            ul
+            {  
+                background-color:#fff;
+                padding-left:0;
+                li               
+                {
+                    a
+                    {
+                       padding: 10px 50px 5px;
+                       line-height: 24px;
+                       font-size:14px;
+                       border-bottom:none;
+                      :before{
+                            width: 6px;
+                            height: 6px;
+                            content: "";
+                            display: inline-block;
+                            border-radius: 100%;
+                            background: #fff;
+                            border:2px solid #999;
+                            margin-right: 5px;
+                        }
+                    }
+                    a:hover
+                        {
+                        background: #dc5057;
+                        color: #fff;
+                        text-decoration: underline;
+                        :before{
+                            border:2px solid #dc5057;
+                        }
+                    }
+                    a:before
+                        {
+                        display: none;
+                    }
+                }
+                li.active-menuitem
+                {
+                    > a{
+                        :before{
+                            border:2px solid #dc5057;
+                        }
+                       
+                    }
+                }
+                a:hover i
+                {
+                    color: $hoverbackground;
+                }
+            }
+            a
+            {
+                padding: 0px 16px;
+                line-height: 56px;
+                color:#666;
+                font-size:16px;
+                border-bottom:1px solid #e3e2e2;
+                
+                i:last-child
+                    {
+                    margin-top: 20px;
+                }
+            }
+           
+            a:hover
+                {
+                background: #dc5057;
+                color: #fff;
+                i:before{
+                    color: #fff;
+                }
+            }
+             a:hover i:last-child {
+                    color: #fff;
+                } 
+        }       
+       
+    }
+}
+.main-body{
+    .layout-wrapper{
+       .clearfix {
+    a{
+        i:first-child{
+            font-size: 20px;
+        } 
+     }
+   } 
+ }
+    
+}
+
+
+
+.layout-wrapper.menu-layout-static.layout-menu-static-inactive{
+    .topbar{
+        .topbar-left
+    {
+        .logo{
+            background: url("\#{resource['poseidon-layout:images/login/logo.svg']}") no-repeat; 
+        }
+    }
+    }
+   
+}
+
+body
+{
+    .ui-widget-content{
+        td
+        {
+            i
+            {
+                color: #999;
+            }
+        }
+    }
+    
+    .ui-widget-header
+    {
+        background-color: #f1f1f1;
+        color: #455467;
+        border: 1px solid #d9e0e7;
+    }
+}
+
+@media (max-width: 1024px)
+{
+   .layout-wrapper.menu-layout-static{
+    .topbar{
+        .topbar-left
+    {
+        .logo{
+            background: url("\#{resource['poseidon-layout:images/login/logo.svg']}") no-repeat; 
+        }
+    }
+    }   
+} 
+}
+   
+    
+    
